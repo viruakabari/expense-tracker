@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">Expense Tracker</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#track-expenses">Track Expenses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Expense Tracker App Section -->
+    <div class="container" id="track-expenses">
+        <h1>Track Your Expenses</h1>
+
+        <div class="expense-input">
+            <input type="text" id="expense-name" placeholder="Expense Name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button id="add-expense-btn">Add Expense</button>
+        </div>
+
+        <h2>Expenses</h2>
+        <ul id="expense-list"></ul>
+
+        <div class="total-expense">
+            <h3>Total: $<span id="total-amount">0</span></h3>
+        </div>
+
+        <div class="controls">
+            <button id="clear-expenses-btn">Clear All</button>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="info-section">
+        <h2>About</h2>
+        <p>This app helps you track your daily expenses and manage your budget efficiently. Keep track of your spending with ease and gain control over your finances!</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="info-section">
+        <h2>Contact</h2>
+        <p>For any inquiries or feedback, feel free to contact us at <strong>support@expensetracker.com</strong>.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
